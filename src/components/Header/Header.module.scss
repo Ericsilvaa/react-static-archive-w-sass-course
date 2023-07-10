@@ -1,26 +1,30 @@
-@import "styles/variaveis";
-@import "styles/breakpoints";
+// @import "styles/variaveis";
+// @import "styles/breakpoints";
 
+// .main {
+//   padding: 0px $padding-horizontal;
+// }
 
-.main {
+.menu {
   padding: 0px $padding-horizontal;
 }
 
-
-
 .header {
-  background-image: url('/assets/cardapio/header.png');
+  background-image: url("/assets/cardapio/header.png");
   align-items: center;
   // cover = pega todo o tamanho H & V
   background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
   display: flex;
-  // padding: 0px $padding-horizontal;
+  // colocando dentro do container principal
+  padding: 0px $padding-horizontal;
   &__text {
     color: white;
     font-size: 5rem;
+    // quando chegar nesse tamanho, quebra...
     min-width: 400px;
+    // em relação a tela
     width: 40%;
   }
 }
