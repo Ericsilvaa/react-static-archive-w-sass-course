@@ -13,6 +13,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "plugins": [{"name": "typescript-styled-plugin"}],
     // [alura] = alterar caminho do import, para um import absoluto.
     "baseUrl": "src",
 
@@ -22,6 +23,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "src/custom.d.ts"],
+  // "files": [""],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

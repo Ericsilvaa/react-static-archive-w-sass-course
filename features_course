@@ -1,0 +1,9 @@
+# Course React with TypeScript and Sass 
+Todo: 
+  [x] Configurar aplicação para ser publicada e acompanhada pelo github.
+  [x] Configurar puglins o mais rapido possivel 
+Header and Search: 
+  [x] Adicinando fontes e normalize (via cmd = npm i normalize.css)
+  [] Criando o header 
+  [] Criando o buscador
+  

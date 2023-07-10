@@ -1,0 +1,26 @@
+@import "styles/variaveis";
+@import "styles/breakpoints";
+
+
+.main {
+  padding: 0px $padding-horizontal;
+}
+
+
+
+.header {
+  background-image: url('/assets/cardapio/header.png');
+  align-items: center;
+  // cover = pega todo o tamanho H & V
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  // padding: 0px $padding-horizontal;
+  &__text {
+    color: white;
+    font-size: 5rem;
+    min-width: 400px;
+    width: 40%;
+  }
+}
