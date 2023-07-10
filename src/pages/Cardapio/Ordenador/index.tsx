@@ -4,12 +4,16 @@ import React, { useState } from "react";
 import classNames from "classnames";
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 
-interface Props {
-  ordenador: string;
-  setOrdenador: React.Dispatch<React.SetStateAction<string>>;
-}
 
-const Ordenador = ({ ordenador, setOrdenador }: Props) => {
+export type OpcoesOrdenador = '' | 'porcao' | 'qtd_pessoas' | 'preco';
+
+
+
+interface IOrdenador {
+  ordenador: OpcoesOrdenador;
+  setOrdenador: Dispatch<SetStateAction<string>>;
+}
+const Ordenador = ({ ordenador, setOrdenador }: IOrdenador) => {
   const [aberto, setAberto] = useState(false);
   
   // pegando o valor do botão
